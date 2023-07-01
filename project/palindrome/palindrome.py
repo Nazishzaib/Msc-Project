@@ -3,4 +3,5 @@ def palindrome(s):
 
     if reversed_s == s:
         return True
-    return False
+    else:
+        return False
