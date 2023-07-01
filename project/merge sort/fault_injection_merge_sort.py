@@ -1,10 +1,8 @@
 # Description: Main file for the project of merge sort algorithm with fault injection
-# here I inject a fault in the merge_sort function by changing the division operator from / to //
-# in order to validate the test cases.
-# Function to sort the
+#fault: the fault is at line 33 a missing k += 1
 def merge_sort(array):
-    if len(array) > 1:  # assert fault here
-        mid = len(array) / 2
+    if len(array) > 1:  
+        mid = len(array) // 2
         left = array[:mid]
         right = array[mid:]
 
@@ -32,6 +30,6 @@ def merge_sort(array):
         while j < len(right):
             array[k] = right[j]
             j += 1
-            k += 1
+            
 
     return array
