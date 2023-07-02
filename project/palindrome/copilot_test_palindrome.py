@@ -11,16 +11,16 @@ class TestPalindrome(unittest.TestCase):
     # 4. test_palindrome_with_mixed_case_and_punctuation
 
     def test_palindrome(self):
-        self.assertTrue(palindrome.palindrome("madam"))
+        self.assertTrue(palindrome.is_palindrome('madam'))
 
     def test_palindrome_with_mixed_case(self):
-        self.assertTrue(palindrome.palindrome("Madam"))
+        self.assertTrue(palindrome.is_palindrome('Madam'))
 
     def test_palindrome_with_punctuation(self):
-        self.assertTrue(palindrome.palindrome("madam!"))
+        self.assertTrue(palindrome.is_palindrome('madam!'))
 
     def test_palindrome_with_mixed_case_and_punctuation(self):
-        self.assertTrue(palindrome.palindrome("Madam!"))
+        self.assertTrue(palindrome.is_palindrome('Madam!'))
 
 
 if __name__ == '__main__':
