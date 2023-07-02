@@ -1,35 +1,35 @@
 # Description: Main file for the project of merge sort algorithm with fault injection
-#fault: the fault is at line 33 a missing k += 1
-def merge_sort(array):
-    if len(array) > 1:  
+# fault: fault is at line 34 a missing k += 1
+
+def merge_sort_func(array):
+    if len(array) > 1:  # assert fault here
         mid = len(array) // 2
         left = array[:mid]
         right = array[mid:]
 
-        merge_sort(left)
-        merge_sort(right)
+        merge_sort_func(left)
+        merge_sort_func(right)
 
-        i = j = k = 0
+        m = n = p = 0
 
-        while i < len(left) and j < len(right):
-            if left[i] < right[j]:
-                array[k] = left[i]
-                i += 1
+        while m < len(left) and n < len(right):
+            if left[m] < right[n]:
+                array[p] = left[m]
+                m += 1
 
             else:
-                array[k] = right[j]
-                j += 1
+                array[p] = right[n]
+                n += 1
 
-            k += 1
+            p += 1
 
-        while i < len(left):
-            array[k] = left[i]
-            i += 1
-            k += 1
+        while m < len(left):
+            array[p] = left[m]
+            m += 1
+            p += 1
 
-        while j < len(right):
-            array[k] = right[j]
-            j += 1
-            
+        while n < len(right):
+            array[p] = right[n]
+            n += 1
 
     return array
