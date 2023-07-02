@@ -11,16 +11,16 @@ class TestFizzBuzz(unittest.TestCase):
     # 4. test_number
 
     def test_fizz_buzz(self):
-        self.assertEqual(fault_injection_fizzbuzz.fizz_buzz(15), 'FizzBuzz')
+        self.assertEqual(fault_injection_fizzbuzz.fiz_buz_func(15), 'FizzBuzz')
 
     def test_fizz(self):
-        self.assertEqual(fault_injection_fizzbuzz.fizz_buzz(3), 'Fizz')
+        self.assertEqual(fault_injection_fizzbuzz.fiz_buz_func(3), 'Fizz')
 
     def test_buzz(self):
-        self.assertEqual(fault_injection_fizzbuzz.fizz_buzz(5), 'Buzz')
+        self.assertEqual(fault_injection_fizzbuzz.fiz_buz_func(5), 'Buzz')
 
     def test_number(self):
-        self.assertEqual(fault_injection_fizzbuzz.fizz_buzz(7), '7')
+        self.assertEqual(fault_injection_fizzbuzz.fiz_buz_func(7), '7')
 
 
 if __name__ == '__main__':
