@@ -1,3 +1,4 @@
+# Description: Palindrome function
 def is_palindrome(s):
     reversed_s = s[::-1]
 
