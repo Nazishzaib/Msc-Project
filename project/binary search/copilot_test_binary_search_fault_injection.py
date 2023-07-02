@@ -17,19 +17,19 @@ class TestAlgorithm(unittest.TestCase):
 
     def test_binary_search(self):
         # test case 1: the target is in the array.
-        self.assertEqual(binary_search_Fault_Injection.binary_search([1, 2, 3, 4, 5], 3), 2)
+        self.assertEqual(binary_search_Fault_Injection.binary_search_algo([1, 2, 3, 4, 5], 3), 2)
 
     def test_binary_search_2(self):
         # test case 2: the target is not in the array.
-        self.assertEqual(binary_search_Fault_Injection.binary_search([1, 2, 3, 4, 5], 6), -1)
+        self.assertEqual(binary_search_Fault_Injection.binary_search_algo([1, 2, 3, 4, 5], 6), -1)
 
     def test_binary_search_3(self):
         # test case 3: the target is the first element in the array.
-        self.assertEqual(binary_search_Fault_Injection.binary_search([1, 2, 3, 4, 5], 1), 0)
+        self.assertEqual(binary_search_Fault_Injection.binary_search_algo([1, 2, 3, 4, 5], 1), 0)
 
     def test_binary_search_4(self):
         # test case 4: the target is the last element in the array.
-        self.assertEqual(binary_search_Fault_Injection.binary_search([1, 2, 3, 4, 5], 5), 4)
+        self.assertEqual(binary_search_Fault_Injection.binary_search_algo([1, 2, 3, 4, 5], 5), 4)
 
 
 if __name__ == '__main__':
