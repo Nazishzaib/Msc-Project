@@ -11,7 +11,7 @@ class TestAlgorithm(unittest.TestCase):
         array = [1, 2, 3, 4, 5, 6, 7, 8, 9]  # array
         target = 5  # target item
         expectedOutput = 4  # expected output
-        sut = binary_search_Fault_Injection.binary_search(array, target)  # software under test
+        sut = binary_search_Fault_Injection.binary_search_algo(array, target)  # software under test
         Output = sut  # actual output is equal to sut
         self.assertEqual(Output, expectedOutput)  # assert method
 
@@ -19,7 +19,7 @@ class TestAlgorithm(unittest.TestCase):
         array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # array
         target = 11  # target item
         expectedOutput = -1  # expected output
-        sut = binary_search_Fault_Injection.binary_search(array, target)  # software under test
+        sut = binary_search_Fault_Injection.binary_search_algo(array, target)  # software under test
         Output = sut  # actual output is equal to sut
         self.assertEqual(Output, expectedOutput)  # assert method
 
@@ -27,7 +27,7 @@ class TestAlgorithm(unittest.TestCase):
         array = [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10]  # array
         target = -5  # target item
         expectedOutput = 4  # expected output
-        sut = binary_search_Fault_Injection.binary_search(array, target)  # software under test
+        sut = binary_search_Fault_Injection.binary_search_algo(array, target)  # software under test
         Output = sut  # actual output is equal to sut
         self.assertEqual(Output, expectedOutput)  # assert method
 
@@ -35,7 +35,7 @@ class TestAlgorithm(unittest.TestCase):
         array = []  # array
         target = 5  # target item
         expectedOutput = -1  # expected output
-        sut = binary_search_Fault_Injection.binary_search(array, target)  # here is the software under test
+        sut = binary_search_Fault_Injection.binary_search_algo(array, target)  # here is the software under test
         Output = sut  # actual output is equal to sut
         self.assertEqual(Output, expectedOutput)  # assert method
 
