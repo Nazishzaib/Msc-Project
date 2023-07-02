@@ -1,9 +1,9 @@
-def fizz_buzz(i):
-    if i % 15 == 0:
+def fiz_buz_func(r):
+    if r % 15 == 0:
         return 'FizzBuzz'
-    elif i % 3 == 0:
+    if r % 3 == 0:
         return 'Fizz'
-    elif i % 5 == 0:
+    if r % 5 == 0:
         return 'Buzz'
     else:
-        return str(i)
+        return r
