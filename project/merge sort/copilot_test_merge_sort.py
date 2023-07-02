@@ -13,16 +13,16 @@ class TestMergeSort(unittest.TestCase):
     # check if input is a string
 
     def test_merge_sort(self):
-        self.assertEqual(main.merge_sort([1, 2, 3, 4, 5]), [1, 2, 3, 4, 5])
+        self.assertEqual(main.merge_sort_func([1, 2, 3, 4, 5]), [1, 2, 3, 4, 5])
 
     def test_merge_sort_mixed(self):
-        self.assertEqual(main.merge_sort([-1, 2, -3, 4, -5]), [-5, -3, -1, 2, 4])
+        self.assertEqual(main.merge_sort_func([-1, 2, -3, 4, -5]), [-5, -3, -1, 2, 4])
 
     def test_merge_sort_float(self):
-        self.assertEqual(main.merge_sort([1.5, 2.5, 3.5, 4.5, 5.5]), [1.5, 2.5, 3.5, 4.5, 5.5])
+        self.assertEqual(main.merge_sort_func([1.5, 2.5, 3.5, 4.5, 5.5]), [1.5, 2.5, 3.5, 4.5, 5.5])
 
     def test_merge_sort_string(self):
-         self.assertEqual(main.merge_sort(["a", "b", "c", "d", "e"]), ["a", "b", "c", "d", "e"])
+         self.assertEqual(main.merge_sort_func(["a", "b", "c", "d", "e"]), ["a", "b", "c", "d", "e"])
 
 
 if __name__ == '__main__':
