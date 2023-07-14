@@ -12,7 +12,7 @@ class TestMergeSort(unittest.TestCase):
         expectedOutput = [1, 2, 3, 4, 5, 6, 7, 8, 9]  # sorted array
         sut = main.merge_sort_func(array)  # system under test
         testOutput = sut
-        self.assertEqual(testOutput, expectedOutput)  # compare the expected output with the actual output
+        self.assertEqual(expectedOutput, testOutput)  # compare the expected output with the actual output
 
     def test_merge_sort_empty(self):  # merge_sort function with empty array
 
@@ -20,7 +20,7 @@ class TestMergeSort(unittest.TestCase):
         expectedOutput = []  # empty array
         sut = main.merge_sort_func(array)  # system under test
         testOutput = sut
-        self.assertEqual(testOutput, expectedOutput)  # compare the expected output with the actual output
+        self.assertEqual(expectedOutput, testOutput)  # compare the expected output with the actual output
 
     def test_merge_sort_duplicateItem(self):  # merge_sort function with duplicate items
 
@@ -28,7 +28,7 @@ class TestMergeSort(unittest.TestCase):
         expectedOutput = [1, 1, 2, 3, 5, 6, 7, 8, 9, 9]  # sorted array
         sut = main.merge_sort_func(array)  # system under test
         testOutput = sut
-        self.assertEqual(testOutput, expectedOutput)  # compare the expected output with the actual output
+        self.assertEqual(expectedOutput, testOutput)  # compare the expected output with the actual output
 
     def test_merge_sort_mixedItem(self):  # merge_sort function with mixed items
 
@@ -36,7 +36,7 @@ class TestMergeSort(unittest.TestCase):
         expectedOutput = [-8, -6, -5, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8]   # sorted array
         sut = main.merge_sort_func(array)  # system under test
         testOutput = sut
-        self.assertEqual(testOutput, expectedOutput)  # compare the expected output with the actual output
+        self.assertEqual(expectedOutput, testOutput)  # compare the expected output with the actual output
 
 
 if __name__ == '__main__':
