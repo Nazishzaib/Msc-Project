@@ -11,7 +11,7 @@ class TestPalindrome(unittest.TestCase):
         sut = fault_injection_palindrome.is_palindrome(Input)  # software under test
         actualOutput = sut  # result
 
-        self.assertEqual(actualOutput, expectedOutput)  # compare actual and expected results
+        self.assertEqual(expectedOutput, actualOutput)  # compare actual and expected results
 
     def test_palindrome_with_mixed_cases(self):  # test the word is palindrome with mixed cases
         Input = "Racecar"  # input
@@ -19,7 +19,7 @@ class TestPalindrome(unittest.TestCase):
         sut = fault_injection_palindrome.is_palindrome(Input)  # software under test
         actualOutput = sut  # result
 
-        self.assertEqual(actualOutput, expectedOutput)
+        self.assertEqual(expectedOutput, actualOutput)
 
     def test_palindrome_with_punctuation(self):  # test the word is palindrome with punctuation
         Input = "Racecar!"  # input
@@ -27,7 +27,7 @@ class TestPalindrome(unittest.TestCase):
         sut = fault_injection_palindrome.is_palindrome(Input)  # software under test
         actualOutput = sut  # result
 
-        self.assertEqual(actualOutput, expectedOutput)
+        self.assertEqual(expectedOutput, actualOutput)
 
     def test_palindrome_with_spaces(self):  # test the word is palindrome with spaces
         Input = "race car"  # input
@@ -35,7 +35,7 @@ class TestPalindrome(unittest.TestCase):
         sut = fault_injection_palindrome.is_palindrome(Input)  # software under test
         actualOutput = sut  # result
 
-        self.assertEqual(actualOutput, expectedOutput)
+        self.assertEqual(expectedOutput, actualOutput)
 
 
 if __name__ == '__main__':
