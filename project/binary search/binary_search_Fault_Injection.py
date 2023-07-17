@@ -2,7 +2,7 @@
 # fault: fault is at line 11, array[mid] == target + 1
 def binary_search_algo(array, target):
     if len(array) == 0:
-        return -1
+        return array
     left = 0
     right = len(array) - 1
 
