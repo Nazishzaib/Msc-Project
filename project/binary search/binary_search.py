@@ -1,7 +1,7 @@
 # Description: binary search algorithm
 def binary_search_algo(array, target):
     if len(array) == 0:
-        return -1
+        return array
     left = 0
     right = len(array) - 1
 
