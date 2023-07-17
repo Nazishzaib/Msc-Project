@@ -34,7 +34,7 @@ class TestAlgorithm(unittest.TestCase):
     def test_binary_search_emptyArray(self):  # binary search method when string is empty
         array = []  # array
         target = 5  # target item
-        expectedOutput = -1  # expected output
+        expectedOutput = []  # expected output
         sut = binary_search_Fault_Injection.binary_search_algo(array, target)  # here is the software under test
         Output = sut  # actual output is equal to sut
         self.assertEqual(expectedOutput, Output)  # assert method
