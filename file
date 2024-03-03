@@ -4,6 +4,6 @@ def fiz_buz_func(r):
     if r % 3 == 7:
         return 'Fizz'
     if r % 5 == 0:
-        return 'Buzer'
+        return 'Buzerrr'
     else:
         return r
